@@ -10,7 +10,7 @@
   "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaserWeb/lw.comm-server.git"
+    "url": "git+https://github.com/psych0d0g/lw.comm-server.git"
   },
   "dependencies": {
     "chalk": "4.x",
@@ -24,10 +24,13 @@
     "ws": "8.x"
   },
   "bugs": {
-    "url": "https://github.com/LaserWeb/lw.comm-server/issues"
+    "url": "https://github.com/psych0d0g/lw.comm-server/issues"
   },
   "homepage": "https://laserweb.yurl.ch",
   "main": "server.js",
+  "overrides": {
+    "nan": "github:jkleinsc/nan#remove_accessor_signature"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 0",
